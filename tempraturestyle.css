@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    outline: none;
+  }
+   body {
+            text-align: center;
+            width: 100%;
+  	        height: 100vh;
+  	        background: url("temp images/sky.jpg");
+            background-size: cover;
+         	background-position: center;
+        	background-repeat: no-repeat;
+        	overflow: hidden;
+       }
+       @media only screen and (max-width:1920px){
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            max-width: 100%;
+            padding: 20px;
+          /*  background: skyblue;*/
+            margin-top: 20px;
+            border-radius: 5px;
+            color: black;
+          
+            background-image:radial-gradient(farthest-side at right bottom,skyblue,aqua);
+
+        
+      }
+        
+         .container:hover{
+        background: linear-gradient(aqua, rgba(0, 0, 0, 0.3));
+        transform: translateY(100px);
+        
+        transition: 0.5s all;
+        line-height: 36px;
+      }
+        select, input, button {
+            width: 100%;
+            padding: 10px;
+            line-height: 30px;
+            margin: 5px 0;
+        }
+         #unitSelect{
+        	background: transparent;
+        	border: 1px solid black;
+        	color: black;
+        	font-weight: bold;
+        	font-size: 20px;
+        }
+        input{
+        	background: transparent;
+        	border: 1px solid black;
+        	color: black;
+        	font-weight: bold;
+        	font-size: 20px;
+
+        }
+         input::placeholder{
+        	color:black;
+        	font-weight: 100;
+        	font-size: 18px;background: 
+        }
+        button{
+        	background: green;
+        	border-radius: 5px;
+        	cursor: pointer;
+        	border: 1px solid black;
+        	color: ghostwhite;
+        	font-weight: bold;
+        	font-size: 20px;
+        }
+        button:hover{
+        	background: #2980b9;
+        }
+        #resultArea{
+        	border: 2px solid black;
+        	width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 20px;
+            color: red;
+            text-shadow: 1px 1px 2px #800000;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .container h1{
+             margin: 5px;
+              color: black;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: scaleAnimation 0.5s ease-in-out infinite alternate;
+        }
+        @keyframes scaleAnimation{
+        	from{
+        		transform: scale(1);
+        	}
+        	to{
+        		transform: scale(1.1);
+        	}
+        }
+    }
+      @media only screen and (max-width:1024px){
+      	.container {
+            width: 400px;
+            margin: 0 auto;
+            max-width: 100%;
+            padding: 20px;
+          /*  background: skyblue;*/
+            margin-top: 20px;
+            border-radius: 5px;
+            color: black;
+            background-image:radial-gradient(farthest-side at right bottom,skyblue,aqua);
+
+        
+      }
+        
+         .container:hover{
+        background: linear-gradient(aqua, rgba(0, 0, 0, 0.3));
+        transform: translateY(100px);
+        
+        transition: 0.5s all;
+        line-height: 36px;
+      }
+  }
+
+       @media only screen and (max-width:420px){
+           .container {
+            width: 300px;
+            margin: 0 auto;
+            max-width: 100%;
+            padding: 20px;
+          /*  background: skyblue;*/
+            margin-top: 20px;
+            border-radius: 5px;
+            color: black;
+            background-image:radial-gradient(farthest-side at right bottom,skyblue,aqua);
+        
+      }  
+  }
+
+       @media (min-width: 568px) and (max-width: 1024px) and (orientation: landscape){
+       	.container h1{
+             margin: 5px;
+             padding: 10px;
+              color: black;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: scaleAnimation 0.5s ease-in-out infinite alternate;
+        }
+        @keyframes scaleAnimation{
+        	from{
+        		transform: scale(1);
+        	}
+        	to{
+        		transform: scale(1.1);
+        	}
+        }
+       	 select, input, button {
+            width: 100%;
+            padding: 10px;
+            line-height: normal;
+            margin: 5px 0;
+        }
+         .container {
+            width: 400px;
+            margin: 0 auto;
+          /*  position: fixed;*/
+            max-width: 100%;
+            padding: 20px;
+            line-height:20px;
+          /*  background: skyblue;*/
+            margin-top: 20px;
+            border-radius: 5px;
+            color: black;
+            background-image:radial-gradient(farthest-side at right bottom,skyblue,aqua);
+
+        
+      }
+        
+          .container:hover{
+        
+        background: linear-gradient(aqua, rgba(0, 0, 0, 0.3));
+        transform: none;
+         
+        line-height: 20px;
+      }
+  }
